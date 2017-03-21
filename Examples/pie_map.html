@@ -1,0 +1,111 @@
+<!-- PieChart generated in R 3.2.3 by googleVis 0.5.10 package -->
+<!-- Tue Mar 21 04:33:37 2017 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataPieChartID2bc0608a6ff0 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "can",
+0.09464416728 
+],
+[
+ "one",
+0.07336757153 
+],
+[
+ "will",
+0.0719002201 
+],
+[
+ "know",
+0.05062362436 
+],
+[
+ "Other",
+0.7094644167 
+] 
+];
+data.addColumn('string','Word');
+data.addColumn('number','Percents');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartPieChartID2bc0608a6ff0() {
+var data = gvisDataPieChartID2bc0608a6ff0();
+var options = {};
+options["allowHtml"] = true;
+
+
+    var chart = new google.visualization.PieChart(
+    document.getElementById('PieChartID2bc0608a6ff0')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartPieChartID2bc0608a6ff0);
+})();
+function displayChartPieChartID2bc0608a6ff0() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID2bc0608a6ff0"></script>
+
+
+<!-- divChart -->
+  
+<div id="PieChartID2bc0608a6ff0" 
+  style="width: 500; height: automatic;">
+</div>
+

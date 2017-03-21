@@ -1,0 +1,390 @@
+<!-- OrgChart generated in R 3.2.3 by googleVis 0.5.10 package -->
+<!-- Tue Mar 21 04:30:53 2017 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataOrgChartID2bc07d793997 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "here",
+null,
+"1" 
+],
+[
+ "will",
+"here",
+"0.0719002201027146" 
+],
+[
+ "know",
+"here",
+"0.0506236243580337" 
+],
+[
+ "see",
+"here",
+"0.0176082171680117" 
+],
+[
+ "great",
+"here",
+"0.020542920029347" 
+],
+[
+ "needs",
+"here",
+"0.0234776228906823" 
+],
+[
+ "love",
+"will",
+"0.0491562729273661" 
+],
+[
+ "first",
+"will",
+"0.0110051357300073" 
+],
+[
+ "good",
+"will",
+"0.0117388114453412" 
+],
+[
+ "eyes",
+"will",
+"0.02494497432135" 
+],
+[
+ "ur",
+"will",
+"0.0234776228906823" 
+],
+[
+ "don",
+"know",
+"0.0308143800440205" 
+],
+[
+ "like",
+"know",
+"0.0403521643433602" 
+],
+[
+ "knowing",
+"know",
+"0.00880410858400587" 
+],
+[
+ "can",
+"know",
+"0.0946441672780631" 
+],
+[
+ "just",
+"see",
+"0.0462215700660308" 
+],
+[
+ "seen",
+"see",
+"0.0066030814380044" 
+],
+[
+ "day",
+"great",
+"0.0176082171680117" 
+],
+[
+ "today",
+"great",
+"0.0432868672046955" 
+],
+[
+ "guys",
+"great",
+"0.0066030814380044" 
+],
+[
+ "now",
+"needs",
+"0.00953778429933969" 
+],
+[
+ "help",
+"needs",
+"0.00953778429933969" 
+],
+[
+ "oh",
+"needs",
+"0.00440205429200293" 
+],
+[
+ "rt",
+"needs",
+"0.00440205429200293" 
+],
+[
+ "friend",
+"needs",
+"0.00733675715333822" 
+],
+[
+ "much",
+"love",
+"0.0161408657373441" 
+],
+[
+ "us",
+"love",
+"0.0117388114453412" 
+],
+[
+ "one",
+"love",
+"0.0733675715333822" 
+],
+[
+ "thanks",
+"love",
+"0.0234776228906823" 
+],
+[
+ "new",
+"first",
+"0.0381511371973588" 
+],
+[
+ "show",
+"first",
+"0.00440205429200293" 
+],
+[
+ "night",
+"good",
+"0.00586940572267058" 
+],
+[
+ "beats",
+"eyes",
+"0.00146735143066764" 
+],
+[
+ "fashion",
+"eyes",
+"0.00146735143066764" 
+],
+[
+ "done",
+"don",
+"0.0117388114453412" 
+],
+[
+ "look",
+"like",
+"0.00733675715333822" 
+],
+[
+ "really",
+"like",
+"0.00733675715333822" 
+],
+[
+ "belong",
+"knowing",
+"0.00293470286133529" 
+],
+[
+ "attractive",
+"knowing",
+"0.00146735143066764" 
+],
+[
+ "make",
+"can",
+"0.0102714600146735" 
+],
+[
+ "get",
+"can",
+"0.0322817314746882" 
+],
+[
+ "wait",
+"can",
+"0.00880410858400587" 
+],
+[
+ "say",
+"can",
+"0.00733675715333822" 
+],
+[
+ "thought",
+"just",
+"0.00586940572267058" 
+],
+[
+ "check",
+"seen",
+"0.00293470286133529" 
+],
+[
+ "bum",
+"seen",
+"0.00146735143066764" 
+],
+[
+ "cleanest",
+"seen",
+"0.00146735143066764" 
+],
+[
+ "ever",
+"seen",
+"0.00146735143066764" 
+],
+[
+ "days",
+"day",
+"0.0176082171680117" 
+],
+[
+ "friday",
+"day",
+"0.0146735143066764" 
+],
+[
+ "happy",
+"day",
+"0.0132061628760088" 
+],
+[
+ "jesus",
+"today",
+"0.00440205429200293" 
+],
+[
+ "question",
+"today",
+"0.00293470286133529" 
+],
+[
+ "work",
+"today",
+"0.00293470286133529" 
+],
+[
+ "realize",
+"guys",
+"0.00293470286133529" 
+],
+[
+ "need",
+"help",
+"0.00440205429200293" 
+],
+[
+ "boy",
+"oh",
+"0.00440205429200293" 
+],
+[
+ "party",
+"rt",
+"0.0117388114453412" 
+],
+[
+ "friends",
+"friend",
+"0.00733675715333822" 
+] 
+];
+data.addColumn('string','Word');
+data.addColumn('string','Parent');
+data.addColumn('string','Percents');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartOrgChartID2bc07d793997() {
+var data = gvisDataOrgChartID2bc07d793997();
+var options = {};
+options["width"] =    600;
+options["height"] =    400;
+options["size"] = "large";
+options["allowCollapse"] = true;
+
+
+    var chart = new google.visualization.OrgChart(
+    document.getElementById('OrgChartID2bc07d793997')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "orgchart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartOrgChartID2bc07d793997);
+})();
+function displayChartOrgChartID2bc07d793997() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartOrgChartID2bc07d793997"></script>
+
+
+<!-- divChart -->
+  
+<div id="OrgChartID2bc07d793997" 
+  style="width: 600; height: 400;">
+</div>
+
