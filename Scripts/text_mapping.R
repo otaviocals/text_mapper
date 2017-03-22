@@ -1,4 +1,4 @@
-text_mapping<- function(word,text,lines=0,depth=1,synthesize=TRUE,filter=FALSE,language="english")
+text_mapping<- function(word,text,lines=0,depth=1,synthesize=TRUE,filter=TRUE,language="english")
 {
 #Loading libraries
 	package_list <- c("tm")
